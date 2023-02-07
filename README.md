@@ -1,4 +1,5 @@
-<include a CircleCI status badge, here>
+# Template:
+[![iel-bouh](https://circleci.com/gh/iel-bouh/Ml-devops.svg?style=svg)](https://app.circleci.com/pipelines/github/iel-bouh/Ml-devops)
 
 ## Project Overview
 
