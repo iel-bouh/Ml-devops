@@ -47,5 +47,29 @@ source .devops/bin/activate
 
 * Setup and Configure Docker locally
 * Setup and Configure Kubernetes locally
-* Create Flask app in Container
+* Create Flask app in Container and push it to dockerhub
+```bash
+./run_docker.sh
+./upload_docker.sh
+```
 * Run via kubectl
+run this script to get the container running in kubernetes
+```bash
+./run_kubernetes.sh
+```
+* Test if the app is running correctly
+run the following commands to get the container running in kubernetes
+```bash
+./make_prediction.sh
+```
+
+## All files 
+* Makefile: commands for  setup,install dependencies, lint and test
+* app.py: main entrypoint for application
+* run_docker.sh: script to put the app in a docker container
+* run_kubernetes.sh: script deploy app to a kubernetes cluster
+* make_prediction.sh: script to to test the app results
+* docker_out.txt: output of container's log after making a predicction
+* kubernetes_out.txt: output of kubernetes deployment pod after making prediction
+* requirements.txt: list of external python dependencies
+* upload_docker.sh: script to upload docker image to docker hub
